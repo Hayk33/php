@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../style/style.css">
+</head>
+<body>
+
+<div align="left">
+   <a href="../index.html"><img src="../images/png.png" class="logo1"></a>
+    </div>
+
+<input class="search" type="text" id="myInput" onkeyup="myFunction()" placeholder="Որենեք մոտ բառերով..." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#" class="header1">Ե</a></li>
+    <li><a href="bank15.html">Երկաթե աման</a></li>
+<li><a href="#" class="header1">Ժ</a></li>
+  <li><a href="#">Ժամ SKMEI</a></li>
+  <li><a href="#"></a></li>
+
+  <li><a href="#" class="header1">Լ</a></li>
+  <li><a href="led2.html">Լույս USB</a></li>
+  <li><a href="led2.html">Լույս սելֆիի համար USB</a></li>
+
+  <li><a href="#" class="header1">Հ</a></li>
+  <li><a href="fan3.html">Հովհար USB</a></li>
+
+   <li><a href="#" class="header1">Վ</a></li>
+    <li><a href="owl14.html">Վզնոց բու</a></li>
+    <li><a href="sandtime17.html">Վզնոց ավազի ժամ</a></li>
+<li><a href="#" class="header1">Փ</a></li>
+    <li><a href="box18.html.html">Փայտե տուփ</a></li>
+    
+
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+</body>
+</html>
