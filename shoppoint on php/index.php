@@ -114,30 +114,29 @@ if(!isset($_COOKIE['user_id'])) {
   <li class="li-"><a href="#contact">Հետաքրքիր տեխնիկա</a></li>
   <li class="li-"><a href="#contact">Նվերներ</a></li>
   <li class="li-"><a href="#contact">Կոնտակտներ</a></li>
-  <section>
+</ul>
+ <section>
 <?php
-	if(empty($_COOKIE['username'])) {
+  if(empty($_COOKIE['username'])) {
 ?>
-	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-		<label for="username">Անուն:</label>
-	<div class="loginForm"><input type="text" name="username"></div>
-	<label for="password">Գաղտնաբառ:</label>
-	<input type="password" name="password">
-	<button type="submit" name="submit">Մուտք</button>
-	<a href="signup.php">Գրանցվել</a>
-	</form>
+  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+    <label for="username">Անուն:</label>
+  <div class="loginForm"><input type="text" name="username"></div><br>
+  <label for="password">Գաղտնաբառ:</label><br>
+  <input type="password" name="password">
+  <button type="submit" name="submit">Մուտք</button>
+  <a href="signup.php">Գրանցվել</a>
+  </form>
 <?php
 }
 else {
-	?>
-	<p><a href="myprofile.php">Իմ էջ</a></p>
-	<p><a href="exit.php">Դուրս գալ(<?php echo $_COOKIE['username']; ?>)</a></p>
-<?php	
+  ?>
+  <p><a href="myprofile.php">Իմ էջ</a></p>
+  <p><a href="exit.php">Դուրս գալ(<?php echo $_COOKIE['username']; ?>)</a></p>
+<?php 
 }
 ?>
 </section>
-</ul>
-
     <!--menu pag-->
     <h2 align="center">Նորույթներ</h2>
     <div class="header">
@@ -147,6 +146,7 @@ else {
       <a href="page/led2.html"><img src="images/4.jpg" class="img-0"></a>
     </div>
     </div>
+
 <div class="block3" align="center">
 <h2>Ապրանքներ</h2>
   <div class="block_3">
