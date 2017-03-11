@@ -1,5 +1,5 @@
 <?php
-$dbc = mysqli_connect('localhost', 'root', '', 'lesson') OR DIE('Ошибка подключения к базе данных');
+$dbc = mysqli_connect('localhost', 'root', '', 'lesson') OR DIE('սխալ');
 if(isset($_POST['submit'])){
 	$username = mysqli_real_escape_string($dbc, trim($_POST['username']));
 	$password1 = mysqli_real_escape_string($dbc, trim($_POST['password1']));
@@ -10,12 +10,12 @@ if(isset($_POST['submit'])){
 		if(mysqli_num_rows($data) == 0) {
 			$query ="INSERT INTO `signup` (username, password) VALUES ('$username', SHA('$password2'))";
 			mysqli_query($dbc,$query);
-			echo 'Всё готово, можете авторизоваться';
+			echo 'Դուք գրանցվեցիք';
 			mysqli_close($dbc);
 			exit();
 		}
 		else {
-			echo 'Логин уже существует';
+			echo 'անունը գոյություն ունի';
 		}
 
 	}
@@ -28,29 +28,16 @@ if(isset($_POST['submit'])){
 <link href="style/style.css" rel="stylesheet">
 </head>
 <body>
-<header>
-<ul>
-	<li><a href="/">Главная</a></li>
-	<li><a href="/">Новости</a></li>
-	<li><a href="/">Музыка</a></li>
-	<li><a href="/">Обратная связь</a></li>
-</ul>
-</header>
 <content>
 	<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-	<label for="username">Введите ваш логин:</label>
+	<label for="username">Գրեք մուտքանուն:</label>
 	<input type="text" name="username">
-	<label for="password">Введите ваш пароль:</label>
+	<label for="password">Գրեք գաղտնաբառ:</label>
 	<input type="password" name="password1">
-	<label for="password">Введите пароль еще раз:</label>
+	<label for="password">Գրեք գաղտնաբառը կրկին:</label>
 	<input type="password" name="password2">
-	<button type="submit" name="submit">Вход</button>
+	<button type="submit" name="submit">Մուտք</button>
 	</form>
 </content>
-<footer class="clear">
-	<p>Все права защищены</p>
-</footer>
-
 </body>
-
 </html>
