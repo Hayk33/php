@@ -15,11 +15,11 @@ if(!isset($_COOKIE['user_id'])) {
 				header('Location: '. $home_url);
 			}
 			else {
-				echo 'Извините, вы должны ввести правильные имя пользователя и пароль';
+				echo 'Սխալ';
 			}
 		}
 		else {
-			echo 'Извините вы должны заполнить поля правильно';
+			echo 'Բաց դաշտ';
 		}
 	}
 }
@@ -119,19 +119,19 @@ if(!isset($_COOKIE['user_id'])) {
 	if(empty($_COOKIE['username'])) {
 ?>
 	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-		<label for="username">Логин:</label>
+		<label for="username">Անուն:</label>
 	<div class="loginForm"><input type="text" name="username"></div>
-	<label for="password">Пароль:</label>
+	<label for="password">Գաղտնաբառ:</label>
 	<input type="password" name="password">
-	<button type="submit" name="submit">Вход</button>
-	<a href="signup.php">Регистрация</a>
+	<button type="submit" name="submit">Մուտք</button>
+	<a href="signup.php">Գրանցվել</a>
 	</form>
 <?php
 }
 else {
 	?>
-	<p><a href="myprofile.php">Мой профиль</a></p>
-	<p><a href="exit.php">Выйти(<?php echo $_COOKIE['username']; ?>)</a></p>
+	<p><a href="myprofile.php">Իմ էջ</a></p>
+	<p><a href="exit.php">Դուրս գալ(<?php echo $_COOKIE['username']; ?>)</a></p>
 <?php	
 }
 ?>
