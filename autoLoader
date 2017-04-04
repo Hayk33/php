@@ -1,0 +1,37 @@
+<?php
+$conn = mysqli_connect('localhost', 'root','','testingNormal');
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<a href="add.php">avelacnel norutyun</a><br><br>
+</body>
+</html>
+<?php
+class Room{
+public static $var="I ";
+}
+
+// require __DIR__ . '/page.php';
+// require __DIR__ . '/add.php';
+
+
+  function autoLoader($name) {
+   require '/'.$name.'.php';
+   switch ($name) {
+   	case 'page'://poxumes en eji anunov vor@ vor petqa load arvi
+   		require '/'.$name.'.php';
+   		break;
+  	case 'add'://poxumes en eji anunov vor@ vor petqa load arvi
+   		require '/'.$name.'.php';
+   		break;
+  }
+}
+  spl_autoload_register('autoLoader');
+
+echo Room::$var;
+echo Page::$im;
+echo Add::$fruit;
