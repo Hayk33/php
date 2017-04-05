@@ -1,0 +1,14 @@
+  function autoLoader($className) {
+  	$class_pieces = explode('\\', $className);
+  	switch ($class_pieces[0]) {
+  		case 'hayk':
+  			require __DIR__ . '/' . implode(DIRECTORY_SEPARATOR, $class_pieces) . '.php';
+  			break;
+  	}
+  	
+  }
+
+  spl_autoload_register('autoLoader');
+
+$obj =new hayk\Page();
+$obj =new hayk\Add();
