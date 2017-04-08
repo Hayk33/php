@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="../style/style.css">
+	<title>Սելֆիի հարմարանք</title>
+  
+  <link rel="shortcut icon" href="../images/favicon.ico">
+</head>
+<body>
+<div align="left">
+   <a href="../index.php"><img src="../images/png.png" class="logo1"></a>
+    </div>
+<h2 align="center">Սելֆիի հարմարանք</h2>
+<div class="all_1">
+  <div align="left">
+<img src="../images/12.jpg" id="generalImg">
+</div>
+<div class="all_">
+<div class="all">
+  <div>
+    <img src="../images/12-1.jpg" class="iconImg">
+  </div>
+  </div>
+  <div class="all">
+  <div>
+    <img src="../images/12-2.jpg" class="iconImg">
+  </div>
+  </div>
+  <div class="all">
+  <div>
+    <img src="../images/12-3.jpg" class="iconImg">
+  </div>
+  </div>
+  <div class="all">
+  <div>
+    <img src="../images/12-4.jpg" class="iconImg">
+  </div>
+  </div>
+  </div>
+  </div>
+    <script type="text/javascript">
+    $(document).ready(function()
+    {
+  $(".iconImg").click(function(event)
+    { 
+      
+      $('#generalImg').attr('src',$(event.target).attr('src')); 
+    } );
+  });
+  
+  </script>
+<br>
+</div>
+<div class="about_">
+  <pre class="about">
+    Ջրակայուն-այո(3bar)
+    Որակ-բարձր
+    Պատրաստված նյութ-ռետին
+    Հաստություն-1.8*7.4սմ
+  </pre>
+  </div>
+  <p align="center" class="about_2">Առկա չէ</p>
+  <div class="shop_">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h1 class="shop">Իրը ձեռք բերելու համար զանգահարել</h1>
+  <h1 class="shop">094828688</h1>
+  <h1 class="shop">Կամ</h1>
+  <h1 class="shop">Գնեք օնլայն</h1>
+  <p class="information1">Ձեր Անուն Ազգանունը</p>
+  <input type="text" class="information" name="Ձ"><br><br>
+  <p class="information1">Ձեր հեռածոսահամարը</p>
+  <input type="text" class="information" name="Ձ"><br><br>
+  <p class="information1">Հասցե</p>
+  <input type="text" class="information" name="Հ"><br><br>
+  <p class="information1">Հուշումներ</p>
+  <input type="text" class="information" name="Հուշումներ" value="Օր. կարմիր խանութի մոտ"><br>
+  <div align="center">
+  <div id="map" style="width:300px;height:300px;background:yellow"></div>
+</div>
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+  <div align="center"><form action="action_page.php">
+  <p class="information1">Քանակ</p>
+  <input type="number" name="quantity" min="1" max="5">
+  <input type="submit" name="Հաստատել" value="Հաստատել">
+</form></div>
+  <a href="id.html"><div align="center" class="button1">
+    <p align="center">Պատվիրել</p>
+    </div></a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Գնել</span>
+</div>
+  <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+  <p class="comment1">Ձեր կարծիքը ապրանքի մասին</p>
+<div class="fb-comments" data-href="https://web.facebook.com/ShoppointArmenia/photos/a.1815690265360088.1073741828.1812839695645145/1819704924958622/?type=3&amp;theater" data-width="500" data-numposts="20"></div>
+
+ <div class="rating">
+ <!--[if lte IE 7]><style>#reviewStars-input{display:none}</style><![endif]-->
+
+<div id="reviewStars-input">
+    <input id="star-4" type="radio" name="reviewStars"/>
+    <label title="gorgeous" for="star-4"></label>
+
+    <input id="star-3" type="radio" name="reviewStars"/>
+    <label title="good" for="star-3"></label>
+
+    <input id="star-2" type="radio" name="reviewStars"/>
+    <label title="regular" for="star-2"></label>
+
+    <input id="star-1" type="radio" name="reviewStars"/>
+    <label title="poor" for="star-1"></label>
+
+    <input id="star-0" type="radio" name="reviewStars"/>
+    <label title="bad" for="star-0"></label>
+</div>
+</body>
+</html>
