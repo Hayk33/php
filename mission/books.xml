@@ -1,0 +1,24 @@
+
+    
+<books>
+    <book>
+    <author>Гарри Гаррисон</author>
+    <title>К западу от Эдема</title>
+    <pubDate>4/13/2017</pubDate>
+    </book>
+    <book>
+    <author>Роберт Сальваторе</author>
+    <title>Изгнанник</title>
+    <pubDate>4/13/2017</pubDate>
+    </book>
+    <book>
+    <author>Макс Фрай </author>
+    <title>Чужак</title>
+    <pubDate>4/13/2017</pubDate>
+    </book>
+    <book>
+    <author>Дмитрий Глуховский</author>
+    <title>Метро 2033</title>
+    <pubDate>4/13/2017</pubDate>
+    </book>
+</books>
