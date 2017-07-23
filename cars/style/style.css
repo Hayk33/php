@@ -1,0 +1,349 @@
+body{
+
+  background-image: url('../images/Road-Wallpaper-Photo-Collection.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.container {
+    overflow: hidden;
+    background-color: black;
+    font-family: Arial;
+}
+
+.container a {
+    float: left;
+    font-size: 16px;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+h2{
+  color: white;
+}
+.logo{
+	margin-top: 20px;
+  width: 250px;
+}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.text1{
+    color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.contentImg{
+width: 30%;
+display: inline-block;
+margin-top: 10px;
+height: auto;
+}
+.contentText{
+margin-bottom: 10px;
+color: white;
+text-decoration: none;
+
+}
+
+   #liform {
+    list-style-type: none; /* Убираем маркеры */
+   }
+   #ulform {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+    display: inline-block;
+   }
+   .image {
+  display: block;
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+-webkit-box-shadow: -1px 2px 62px -3px rgba(0,0,0,0.94);
+-moz-box-shadow: -1px 2px 62px -3px rgba(0,0,0,0.94);
+box-shadow: -1px 2px 62px -3px rgba(0,0,0,0.94);
+
+
+}
+.imageSearch{
+    width: 40%;
+  height: 300px;
+-webkit-box-shadow: -1px 2px 62px -3px rgba(0,0,0,0.94);
+-moz-box-shadow: -1px 2px 62px -3px rgba(0,0,0,0.94);
+box-shadow: -1px 2px 62px -3px rgba(0,0,0,0.94);
+margin-top: 30px;
+}
+.imagePage{
+margin-left: 30px;
+  width: 30%;
+  height: auto;
+-webkit-box-shadow: -1px 2px 62px -3px rgba(0,0,0,0.94);
+-moz-box-shadow: -1px 2px 62px -3px rgba(0,0,0,0.94);
+box-shadow: -1px 2px 62px -3px rgba(0,0,0,0.94);
+}
+#textname{
+  font-size: 20px;
+
+  text-decoration: none;
+
+
+}
+#textname1{
+  font-size: 20px;
+  margin-top: 50px;
+  text-decoration: none;
+  border:1px solid white;
+  width: 700px;
+  background-color: white;
+
+}
+.h1{
+  margin-top: 100px;
+  color: white;
+}
+#atext{
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+#atext:hover{
+  color: linear-gradient(to left top, blue, red);
+  text-decoration: none;
+}
+.atext1{
+  color: black;
+  text-decoration: none;
+}
+.atext1:hover{
+  color: #00796B;
+  text-decoration: none;
+}
+#atextSearch{
+    color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.imageabout{
+  width: 70%;
+
+}
+.content {
+    max-width: 1500px;
+    margin: auto;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #00796B;
+}
+
+
+.search{
+  width: 10%;
+
+
+}
+.comment{
+      opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.comment1{
+      opacity: 0.1;
+    filter: alpha(opacity=50);
+}
+
+.signinForm{
+  text-decoration: none;
+  color: white;
+
+}
+.signinForm:hover{
+  text-decoration: none;
+  color: black;
+
+}
+
+.signbutton{
+      background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.pre{
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+
+}
+
+
+p{
+color: white;
+}
+
+.wrapper {
+  position: absolute;
+  
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1.2px;
+  padding: 12px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+
+.btn--primary {
+  color: red;
+}
+
+.btn--border {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.btn--animated {
+  -webkit-transition-property: color;
+    background: red;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+          margin-top: 100px;
+          color: black;
+}
+.btn--animated.btn--border.btn--primary {
+  border: 1px solid red;
+}
+.btn--animated:before {
+  content: "";
+  position: absolute;
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  z-index: -1;
+}
+.btn--animated:hover {
+  color: white;
+}
+.btn--animated:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+          transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+}

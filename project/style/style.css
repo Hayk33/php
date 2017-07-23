@@ -1,0 +1,92 @@
+body{
+  background: linear-gradient(to top, red, #212121); 
+
+}
+.text {
+text-decoration: none;
+display: inline-block;
+position: relative;
+font-family: Arial;
+font-weight: bold;
+padding: 0 0 5px 0;
+color: red;
+margin:10px;
+}
+
+.text:after {
+content: '';
+position: absolute;
+height: 2px;
+width: 100%;
+left: 0;
+bottom: 0;
+visibility: hidden;
+background-color: red;
+-webkit-transition: all .1s ease;
+transition: all 0.3s ease;  
+-webkit-transform: scaleX(0);
+-ms-transform: scaleX(0);
+transform: scaleX(0);
+}
+
+.text:hover:after {
+visibility: visible;
+-webkit-transform: scaleX(1);
+-ms-transform: scaleX(1);
+transform: scaleX(1);
+}
+#logo{
+margin-top: 10px;
+display:none;
+z-index: 9999999;
+} 
+#losung{
+margin-bottom: -200px;
+margin-left: 50px;
+
+}
+#header{
+background-color: black;
+height: 400px;
+width: 100%;
+border-radius: 10px;
+
+}
+#contentImg{
+
+width: 200px;
+height: auto;
+transition: 1s;
+display: inline-block;
+}
+
+#contentImg:hover{
+width: 210px;
+height: auto;
+display: inline-block;
+transition: 1s;
+}
+#hrcontent{
+  height: 5px;
+  background-color: black;
+  border:solid black;
+}
+#contentText{
+margin-top: 70px;
+font-family: Arial;
+font-weight: bold;
+color: white;
+}
+#contentImg1{
+  width: 300px;
+  height: 300px;
+}
+#contentImg2{
+  width: 400px;
+  height: 280px;
+}
+#headerImg{
+  width: 1000px;
+}
+
+
