@@ -1,0 +1,50 @@
+/* 
+Theme Name: bootstrap
+Theme URI: http://coders-guide.com
+Description: My Bootstrap 3 responsive theme
+version: 1
+Author: Hayk Harutyunyan
+*/
+body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+}
+.logo{
+	width: 35%;
+	margin-top: -15px;
+	margin-bottom: 15px;
+}
+.imgContent{
+	width: 50%;
+	height: auto;
+
+}
+.buttonBtn{
+	margin-top: 200px;
+}
+.img-circle{
+	width: 50%;
+}
+
+.navbar-header{
+	width: 40%;
+	height: 30%;
+}
+.busImg{
+	width: 100%;
+}
+.header{
+	margin-top: 100px;
+}
+hr{
+	background-color: green;
+	height: 5px;
+}
+.navbar-header-div{
+	margin-top: 30px;
+}
+.bus-ins{
+	width: 70%;
+	height: auto;
+}
